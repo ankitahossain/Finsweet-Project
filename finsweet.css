@@ -1,0 +1,802 @@
+/* =====================================common css====================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+img,
+div,
+p {
+
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+:root{
+    --Poppins--:"Poppins", sans-serif;
+    --Manrope--:"Manrope", sans-serif;
+    --dark-blue--:#1C1E53;
+    --white-color--:#ffffff;
+    --blue-color--: #2405f2;
+    --black-color--:#282938;
+    --primary-font-color:#BBBBCB;
+    --secondary-background-color:#F4F6FC;
+    --sunshine--:#FCD980;
+    --heading-font-size:48px;
+    --subheading-font-size:38px;
+    --heading-font-weight:600px;
+    --paragraph-font-size:16px;
+    --primary-font-size:16px;
+    --primary-font-weight:500;
+    --paragraph-font-weight:600;
+    
+
+
+}
+
+body{
+   font-family: var(--Poppins--);
+}
+
+/* ==========================navbar css====================================== */
+
+.ourCustomNav{
+    background-color: var(--dark-blue--);
+    padding: 16px 0;
+    
+}
+
+.customNavItem{
+  margin-right: 32px;
+
+  
+}
+
+.customNavItem a{
+ color: var(--white-color--);
+ transition: all linear .3s;
+
+
+}
+
+.customNavItem a:hover {
+    color: var(--primary-font-color);
+}
+
+.custombutton{
+    padding: 16px 48px;
+    border-radius: 41px;
+    border: 2px solid #3d3f6c;
+    color: var(--white-color--);
+    font-size: var(--primary-font-size);
+    font-weight: var(--primary-font-weight);
+    background-color:transparent;
+    transition: ease-in-out .3s;
+    
+}
+
+.custombutton:hover{  
+
+  background-color: var(--sunshine--);
+  color: black;
+
+    
+}
+
+/* ==========================navbar css====================================== */
+
+/* =============================banner css===================================== */
+.EarlyStartup{
+    padding: 128px 0;
+    background-color: var(--dark-blue--);
+}
+
+.EarlyStartupLeft{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+
+}
+
+.EarlyStartupLeft_Title{
+  font-family: var(--Poppins--);
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  color: var(--white-color--);
+  
+}
+
+.EarlyStartupLeft_Summary{
+
+  font-family: var(--Poppins--);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--primary-font-color);
+  opacity: 0.7;
+
+}
+
+.Viewourwork{
+    
+
+    padding: 16px 56px;
+    border-radius: 41px;
+    border: 2px solid #3d3f6c;
+    color: var(--white-color--);
+    font-size: var(--primary-font-size);
+    font-weight: var(--primary-font-weight);
+    font-family: var(--Manrope--);
+    background-color:transparent;
+    transition: ease-in-out .3s;
+  
+
+}
+
+
+.Viewourwork:hover{
+    color: black;
+    background-color: var(--sunshine--);
+}
+.ViewPricing{
+    
+    padding: 16px 48px;
+    font-family: var(--Poppins--);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--primary-font-color);
+    background-color: transparent;
+    border: 2px solid #3d3f6c;
+    border-radius: 41px;
+    
+  
+
+}
+
+.ViewPricing:hover{
+
+    color: var(--sunshine--);
+  
+}
+
+
+
+/* =============================banner css===================================== */
+
+/* =============================how we work css=============================== */
+
+.HowWeWork{
+
+    padding: 128px 0;
+    background-color: var(--secondary-background-color);
+}
+
+.HowWeWorkLeft{  
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+}
+
+.HowWeWorkLeft_Title{
+
+    font-family: var(--Poppins--);
+    font-weight: 600;
+    font-size: 48px;
+    line-height:64px;
+    color: black;
+  
+
+}
+
+.HowWeWork_Summary{
+
+    font-family: var(--Poppins--);
+    font-weight: 400;
+    font-size: 16px;
+    line-height:28px;
+    color: #282938;
+  
+
+}
+
+
+
+.HowWeWorkRight{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+}
+
+.HowWeWorkRight_title{
+    font-family: var(--Poppins--);
+    font-weight: 600;
+    font-size: 38px;
+    line-height:64px;
+    color: black;
+}
+
+.HowWeWorkRight_summary{
+
+    font-family: var(--Poppins--);
+    font-weight: 400;
+    font-size: 16px;
+    line-height:28px;
+    color: #282938;
+
+}
+
+
+.IconHeadingSummary{
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+/* =============================how we work css=============================== */
+
+/* ===============================project css================================================= */
+
+.ViewOurProject{
+    padding: 128px 0;
+    background-color: var(--white-color--);
+}
+
+.ViewOurProjectTitle{
+    font-family: var(--Poppins--);
+    font-weight: var(--heading-font-weight);
+    font-size: var(--heading-font-size);
+    color: var(--black-color--);
+    text-transform: capitalize;
+
+}
+
+.ViewOurProject_Link{
+  color: var(--black-color--);
+}
+/* ===============================project css================================================= */
+
+.ViewOurProjectImageWrapper{
+    padding: 64px 0;
+}
+
+.overlay{ 
+
+    position: absolute;
+    height: 100%;
+    width:45%;
+    transition: all linear .6s;
+    background-image: linear-gradient(342deg,rgb(28, 30, 83)-41%,rgb(28, 30, 83,0.42)); 
+    top:0px;
+    left:-60px;
+    opacity: 0;  
+    
+
+}
+
+   .img--2{
+     width:64%;
+   }
+  .ViewOurProjectImage:hover .overlay{
+    left:0;
+    top:0;
+    opacity: 1;
+  }
+   
+
+.overlayWrapper{
+  
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: start;
+    height: 100%;
+    justify-content: flex-end;
+    padding-left: 48px;
+    padding-bottom: 76px;
+
+}
+
+.overlay_wrapper_title{  
+    font-family: var(--Poppins--);
+    font-weight:600;
+    font-size: 24px;
+    line-height: 36px;
+    color:var(--white-color--);
+
+
+}
+
+
+.overlay_wrapper_summary{  
+
+    font-family: var(--Poppins--);
+    font-weight:500;
+    font-size: 16px;
+    line-height: 28px;
+    color:var(--primary-font-color);
+
+
+
+}
+
+.project--link{
+    color:var(--sunshine--);
+}
+
+.ViewOurProjectImage:hover .overlay{
+    left:0;
+    top:0;
+    opacity: 1;
+ }
+
+ /* ===============================project css================================================= */
+
+.DesignSection{
+    padding: 171px 0 0 495px;
+    background-color: var(--secondary-background-color);
+}
+
+.DesignCards{
+    padding: 100px 0;
+    background-color: var(--secondary-background-color);
+}
+.DesignTop{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+     align-items: center;
+    
+}
+
+.DesignSectionTitle{
+
+    font-family: var(--Poppins--);
+    font-weight: 600;
+    font-size: 48px;
+    line-height:64px;
+    color: black;
+  
+
+    
+}
+.DesignSectionLink{
+  color: var(--black-color--);
+}
+
+
+.DesignCardWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 48px ;
+    row-gap: 15px;
+    background-color:var(--white-color--);
+}
+.DesignCardTitle{
+
+    font-family: var(--Poppins--);
+    font-weight: 500;
+    font-size: 24px;
+    line-height:36px;
+    color:var(--black-color--);
+  
+
+}
+
+.DesignCardSummary{
+    font-family: var(--Poppins--);
+    font-weight: 400;
+    font-size: 16px;
+    line-height:28px;
+    color: var(--primary-font-color);
+
+}
+
+.DesignCardsTop{
+ 
+    margin-top: 44px;
+}
+
+
+
+ /* ===============================project css================================================= */
+
+ /* =============================== about us css====================================================== */
+ .Aboutus{
+
+    padding: 128px 0;
+    background-color: var(--white-color--);
+ }
+
+ .AboutusLeftWrapper{
+   display: flex;
+   flex-direction: column;
+   row-gap: 16px;
+ }
+
+ .AboutusRightWrapper{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+
+ }
+ 
+
+ .AboutusBottomWrapper{
+    display: flex;
+    flex-direction:row;
+    column-gap: 14px;
+ }
+ 
+ .HeadingAndTextWrapper{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+ }
+
+
+ 
+ /* =============================== about us css====================================================== */
+
+ /* ====================================FAQ css===================================================== */
+
+ .FAQ{
+
+    padding: 128px 0;
+ }
+
+ .FAQLeftWrapper{
+   display: flex;
+   flex-direction: column;
+   row-gap: 16px;
+ }
+
+ .FAQLeftWrapperTitle{
+  color: var(--black-color--);
+ }
+
+ .FAQLeftWrapperText{
+   color:var(--blue-color--);
+ }
+
+ .num{
+    padding-right:50px;
+    color: var(--blue-color--);
+ }
+
+ .customcontent{
+    padding-left: 66px ;
+    padding-right: 30%;
+    color: var(--dark-blue--);
+ }
+
+ .accordion-button::after {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    content: "+";
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background-image: url(https://www.iconpacks.net/icons/1/free-plus-icon-321-thumb.png);
+    transform: rotate(0deg);
+}
+ /* ====================================FAQ css===================================================== */
+
+
+/* ===================================Form CSS====================================== */
+#formPart {
+    padding: 128px 0;
+    background-color: var(--white-color--);
+}
+
+.formPart__image {
+    position: relative;
+    background-image: url("../images/woman-writing-on-paper-3228878.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 656px;
+    height: 691px;
+    z-index: 1;
+}
+
+.formPart__image-content {
+    padding: 96px 96px 261px 96px;
+    z-index: 3;
+}
+
+.content__heading {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 74px;
+    color: var(--white-color--);
+}
+
+.content__summary {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--white-color--);
+}
+
+.formPart__image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1C1E5380;
+    z-index: -1;
+}
+
+.formPart__fillup {
+    background-color: var(--dark-blue--);
+    height: 100%;
+}
+
+.formPart__fillup {
+    padding: 96px 96px 48px 96px;
+}
+
+.formPart__fillup-heading {
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--white-color--);
+}
+
+.formPart__fillup-summary {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--white-color--);
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.text__box {
+    padding: 18px 0 18px 32px;
+    border: 1.5px solid #FFFFFF0D;
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--secondary-background-color);
+}
+
+.text__box::placeholder {
+    color: rgba(244, 246, 252, 0.5);
+}
+
+.formPart__fillup-form {
+    gap: 16px;
+}
+
+.formPart-btn {
+    margin-top: 40px;
+    margin-bottom: 28px;
+    padding: 16px 150px;
+    background-color: #BBBBCB;
+    border: none;
+    border-radius: 41px;
+    color: #1B1C2B;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.formPart-btn:hover {
+    background-color: var(--sunshine--);
+}
+
+.formPart--anchor {
+    display: block;
+    color: var(--white-color--);
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.formPart--anchor:hover {
+    color: var(--sunshine--);
+}
+
+/* ===================================Form CSS====================================== */
+
+
+/* ==================================our blog==================================================== */
+
+.OurBlog{
+  padding: 128px 0;
+  background-color: var(--white-color--);
+}
+.OurBlogCard{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.OurBlogHeading{
+    padding-bottom: 64px;
+    font-family: var(--Poppins--);
+    font-weight: 500;
+    font-size: 38px;
+    line-height:64px;
+    color: black;
+}
+.OurBlogCardHeading{
+    font-family: var(--Poppins--);
+    font-weight: 500;
+    font-size: 16px;
+    line-height:28px;
+    color: var(--primary-font-color);
+
+}
+
+.OurBlogCardSummary{
+    font-family: var(--Poppins--);
+    font-weight: 500;
+    font-size: 24px;
+    line-height:36px;
+    color: var(--black-color--);
+
+}
+
+.Read--more{
+    color: var(--black-color--);
+}
+
+.OurBlogCardText{
+    font-family: var(--Poppins--);
+    font-weight: 500;
+    font-size: 16px;
+    line-height:28px;
+    color: var(--primary-font-color);
+
+}
+.OurBlogCardWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+/* ==================================our blog==================================================== */
+
+
+/* ===============================footer css=================================================== */
+
+#footerPart {
+    padding-top: 96px;
+    background-color: var(--dark-blue--);
+}
+
+.footerPart__summary {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--white-color--);
+    opacity: 0.8;
+    padding-top: 22px;
+    padding-bottom: 86px;
+}
+
+.footerPart__contactInfo {
+    background-color: var(--sunshine--);
+    padding: 17px 137px 16px 37px;
+}
+
+.footerPart__contactInfo-mail-heading,
+.footerPart__contactInfo-phone-heading {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--primary-font-color);
+    line-height: 32px;
+}
+
+.footerPart__contactInfo-mail-address,
+.footerPart__contactInfo-phone-num {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--primary-font-color);
+    line-height: 28px;
+    
+}
+
+.footerPartRight__heading {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    color: var(--white-color--);
+}
+
+.footerPartRight__summary {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--white-color--);
+    padding-top: 14px;
+    padding-bottom: 28px;
+
+}
+
+.footerPartRight__icons {
+    display: flex;
+    color: var(--white-color--);
+    font-size: 16px;
+    gap: 27px;
+}
+
+.footer--icon {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.footer--icon:hover {
+    color: var(--sunshine--);
+}
+
+
+/* ===============================footer css=================================================== */
+
+/* ===================================CopyRight css ======================================*/
+#copyRight {
+    padding: 32px 0;
+}
+
+
+.copyRight__nav {
+    margin-right: 32px;
+}
+
+.copyRight__nav a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--fontColor);
+    transition: 0.3s ease-in-out;
+}
+
+.copyRight__nav a:hover {
+    color: var(--sunshine--);
+}
+
+/* ===================================CopyRight css======================================*/
