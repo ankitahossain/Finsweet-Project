@@ -478,54 +478,95 @@ body{
  /* ====================================FAQ css===================================================== */
 
  .FAQ{
-
+    background-color: var(--white-color--);
     padding: 128px 0;
- }
-
- .FAQLeftWrapper{
-   display: flex;
-   flex-direction: column;
-   row-gap: 16px;
- }
-
- .FAQLeftWrapperTitle{
-  color: var(--black-color--);
- }
-
- .FAQLeftWrapperText{
-   color:var(--blue-color--);
- }
-
- .num{
-    padding-right:50px;
-    color: var(--blue-color--);
- }
-
- .customcontent{
-    padding-left: 66px ;
-    padding-right: 30%;
-    color: var(--dark-blue--);
- }
-
- .accordion-button::after {
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-    margin-left: auto;
-    content: "+";
-    background-image: none;
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    transition: transform .2s ease-in-out;
 }
 
+.FAQ__Number{
+    font-size: 28px;
+    font-weight: 500;
+    vertical-align: middle;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: #2405F2;
+    padding-right:60px;
+}
+
+ 
+.FAQLeft__title{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+}
+.FAQLeft__Link{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+    color: #2405F2;
+}
+.FAQLeft{ 
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.accordion-body {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+    color: var(--primary_font_color);
+    /* padding: var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x); */
+    padding-left: 105px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-font-color);
+    background-color: transparent;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+
+}
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color:var(--primary_font_color);
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: var(--bs-accordion-btn-bg);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border: none;
+}
 .accordion-button:not(.collapsed)::after {
-    content: " ";
-    width: 20px;
-    height: 20px;
-    background-image: url(https://www.iconpacks.net/icons/1/free-plus-icon-321-thumb.png);
-    transform: rotate(0deg);
+    background-image:url(../images/cross.png);
+    transform:var(--bs-accordion-btn-icon-transform);
 }
+.accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: url(../images/download\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+/
  /* ====================================FAQ css===================================================== */
 
 
