@@ -569,122 +569,137 @@ body{
 /* ==================================faq css========================================= */
 
 
-/* ===================================Form CSS====================================== */
-#formPart {
-    padding: 128px 0;
+.EarlyStartUp{
+
+    padding: 128px ;
     background-color: var(--white-color--);
+
+}
+.EarlyStartUpLeft__OverlayForText{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    padding-left: 96px;
+    padding-top: 96px;
+    
 }
 
-.formPart__image {
-    position: relative;
-    background-image: url("../images/woman-writing-on-paper-3228878.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 656px;
-    height: 691px;
-    z-index: 1;
-}
-
-.formPart__image-content {
-    padding: 96px 96px 261px 96px;
-    z-index: 3;
-}
-
-.content__heading {
-    font-weight: 600;
+.EarlyStartUpLeft__OverlayForTextTitle{
     font-size: 54px;
+    font-weight: 600;
     line-height: 74px;
     color: var(--white-color--);
+    font-family: var(--popins);
+   
 }
 
-.content__summary {
-    font-weight: 500;
+.EarlyStartUpLeft__OverlayForTextSummary{
     font-size: 16px;
+    font-weight: 500;
     line-height: 28px;
+    font-family: var(--popins);
+    color: var(--white-color--);
+    opacity: 0.7;
+}
+.EarlyStartUpRight{
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-blue--);
+    padding-left:96px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+   
+    padding-top:96px;
+
+}
+
+.EarlyStartUpRight__Title{
+    font-size: 32px;
+    font-family: 500;
+    line-height: 48px;
+    font-family: var(--popins);
     color: var(--white-color--);
 }
 
-.formPart__image-overlay {
+.EarlyStartUpRight__Summary{
+    font-size: 16px;
+    font-family: 500;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: var(--white-color--);
+}
+.Form{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-top: 40px;
+}
+
+.EarlyStartUpRight__Button{
+    width: 432px;
+    height: 64px;
+    background-color: var(--sunshine--);
+    border-radius: 41px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--black-color--);
+    font-family: var(--popins);
+    padding-top: 10px;
+}
+
+.EarlyStartUpRight__Button:hover{
+    background-color: transparent;
+    color: var(--white_color);
+    border: 4px solid #474975;
+
+}
+
+
+.EarlyStartUpRightButton__Link{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+    color: var(--white_color);
+    padding-left: 100px;
+}
+
+.EarlyStartUp__OverlayMainFull{
+    width: 100%;
+    height: 100%; 
+    background: linear-gradient(rgba(28, 30, 83, 0.475),rgba(62, 66, 185, 0.159));
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #1C1E5380;
-    z-index: -1;
+    transition: ease-in-out .6s;
+    opacity: 1;
 }
 
-.formPart__fillup {
-    background-color: var(--dark-blue--);
-    height: 100%;
-}
-
-.formPart__fillup {
-    padding: 96px 96px 48px 96px;
-}
-
-.formPart__fillup-heading {
-    font-weight: 500;
-    font-size: 32px;
-    color: var(--white-color--);
-}
-
-.formPart__fillup-summary {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-    color: var(--white-color--);
-    margin-top: 16px;
-    margin-bottom: 40px;
-}
-
-.text__box {
-    padding: 18px 0 18px 32px;
-    border: 1.5px solid #FFFFFF0D;
-    border-radius: 8px;
+.name{
     background-color: transparent;
-    color: var(--secondary-background-color);
+    border: 4px solid #27295ceb;
+    border-radius: 8px;
+    width: 432px;
+    height: 64px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: #F4F6FC;
+    padding-left: 20px;
+    
 }
 
-.text__box::placeholder {
-    color: rgba(244, 246, 252, 0.5);
+.EarlyStartUpContentWrapper:hover .EarlyStartUp__OverlayMainFull{
+    top: -100%;
+    opacity: 0;
 }
-
-.formPart__fillup-form {
-    gap: 16px;
-}
-
-.formPart-btn {
-    margin-top: 40px;
-    margin-bottom: 28px;
-    padding: 16px 150px;
-    background-color: #BBBBCB;
-    border: none;
-    border-radius: 41px;
-    color: #1B1C2B;
-    font-weight: 500;
-    font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    transition: 0.3s ease-in-out;
-}
-
-.formPart-btn:hover {
-    background-color: var(--sunshine--);
-}
-
-.formPart--anchor {
-    display: block;
-    color: var(--white-color--);
-    transition: 0.3s ease-in-out;
-    text-align: center;
-}
-
-.formPart--anchor:hover {
-    color: var(--sunshine--);
-}
-
-/* ===================================Form CSS====================================== */
-
 
 /* ==================================our blog==================================================== */
 
