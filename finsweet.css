@@ -757,101 +757,105 @@ body{
 /* ==================================our blog==================================================== */
 
 
-/* ===============================footer css=================================================== */
-
-#footerPart {
-    padding-top: 96px;
+/*===============Footer CSS============= */
+.Footer{
     background-color: var(--dark-blue--);
+    padding-top: 128px;
 }
-
-.footerPart__summary {
+.FooterTopLeft__Title{
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
-    color: var(--white-color--);
-    opacity: 0.8;
-    padding-top: 22px;
-    padding-bottom: 86px;
+    font-family: var(--popins);
+    color:var(--white-color--);
 }
-
-.footerPart__contactInfo {
-    background-color: var(--sunshine--);
-    padding: 17px 137px 16px 37px;
+.FooterTopLeft{
+    row-gap: 22px;
 }
-
-.footerPart__contactInfo-mail-heading,
-.footerPart__contactInfo-phone-heading {
-    font-weight: 500;
-    font-size: 18px;
-    color: var(--primary-font-color);
-    line-height: 32px;
+.FooterTopRight__Title{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    font-family: var(--popins);
+    color:var(--white-color--);
 }
-
-.footerPart__contactInfo-mail-address,
-.footerPart__contactInfo-phone-num {
+.FooterTopRight__Summary{
+    font-size: 16px;
     font-weight: 400;
-    font-size: 16px;
-    color: var(--primary-font-color);
     line-height: 28px;
+    font-family: var(--popins);
+    color: #F4F6FC;
+}
+.FooterTopRight__Logo{
+    display: flex;
+    column-gap: 27px;
+}
+.FooterTopRight{
+    row-gap: 18px;
+}
+.FooterWrapper{
+    display: flex;
+    column-gap: 260px;
+}
+i[class="fa-brands fa-facebook fa-beat"],
+i[class="fa-brands fa-twitter fa-beat"],
+i[class="fa-brands fa-instagram fa-beat"],
+i[class="fa-brands fa-linkedin fa-beat"]
+{   
+    
+    color: var(--white-color--);
+    padding-top: 12px;
+}
+.FooterBottomWrapper{
+    background-color: var(--sunshine--);
+    display: flex;
+    column-gap: 29px;
+    padding-left: 27px;
+    padding-top: 18px;
+    padding-bottom: 16px;
     
 }
-
-.footerPartRight__heading {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 64px;
-    color: var(--white-color--);
+.FooterBottomWrapper__EmailTitle{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: var(--popins);
+    color: var(--primary-font-color);
+}
+.FooterBottomWrapper__Email{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    font-family: var(--popins);
+    color: var(--primary-font-color);
+    opacity: 0.7;
+}
+/*===============Footer CSS============= */
+/*===============CopyRight CSS============= */
+.CopyRight{
+    padding: 22px 0;
+    background-color: var(--white-color--);
 }
 
-.footerPartRight__summary {
+.CopyRightLeft{
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
-    color: var(--white-color--);
-    padding-top: 14px;
-    padding-bottom: 28px;
-
+    font-family: var(--popins);
+    color: var(--black-color--);
 }
-
-.footerPartRight__icons {
-    display: flex;
-    color: var(--white-color--);
-    font-size: 16px;
-    gap: 27px;
-}
-
-.footer--icon {
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.footer--icon:hover {
-    color: var(--sunshine--);
-}
-
-
-/* ===============================footer css=================================================== */
-
-/* ===================================CopyRight css ======================================*/
-#copyRight {
-    padding: 32px 0;
-}
-
-
-.copyRight__nav {
-    margin-right: 32px;
-}
-
-.copyRight__nav a {
+.CopyRightItem{
+    padding-left: 32px;
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
-    color: var(--fontColor);
-    transition: 0.3s ease-in-out;
+    font-family: var(--popins);
+    color:var(--black-color--);
+    
 }
-
-.copyRight__nav a:hover {
+.CopyRightItem:hover{
     color: var(--sunshine--);
 }
+/*===============CopyRight CSS============= */
 
-/* ===================================CopyRight css======================================*/
+
